@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_photo_detail"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_user_placeholder"
+                    app:civ_border_color="#7FFF"
+                    app:civ_border_width="2dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto_reguler"
+                    android:text="Khoirur Rosy"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="N I K" />
+
+            <TextView
+                android:id="@+id/tv_nik_detail"
+                style="@style/PrimaryText"
+                android:text="3528011811910003"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Nama Lengkap"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_fullname_detail"
+                style="@style/PrimaryText"
+                android:text="Khoirur Rosy"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Tempat Lahir"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_tmpt_lahir"
+                style="@style/PrimaryText"
+                android:text="Pamekasan"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Tanggal Lahir"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_tgl_lahir"
+                style="@style/PrimaryText"
+                android:text="18-11-1991"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Telephone"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_tlp"
+                style="@style/PrimaryText"
+                android:text="+6282301769082"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Provinsi"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_provinsi"
+                style="@style/PrimaryText"
+                android:text="Jawa Timur"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Kabupaten"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_kabupaten"
+                style="@style/PrimaryText"
+                android:text="Pamekasan"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Kecamatan"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_kecamatan"
+                style="@style/PrimaryText"
+                android:text="Pademawu"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Kelurahan"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_kelurahan"
+                style="@style/PrimaryText"
+                android:text="Jarin"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Jln/Kmp/Dusun"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_jalan"
+                style="@style/PrimaryText"
+                android:text="Kmp. Kotalon"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Tahun Masuk"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_thn_msk"
+                style="@style/PrimaryText"
+                android:text="2004"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Tahun Keluar"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_thn_keluar"
+                style="@style/PrimaryText"
+                android:text="2010"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="Keterangan"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_keterangan"
+                style="@style/PrimaryText"
+                android:text="Tidak ada keterangan"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

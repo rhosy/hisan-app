@@ -1,0 +1,11 @@
+<resources>
+    <string name="my_app_name">HISAN</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_label_login">Login to Your Account</string>
+    <string name="hint_text_username">Username</string>
+    <string name="text_hint_password">Password</string>
+    <string name="text_btn_login">Login</string>
+    <string name="text_hisan">Himpunan Santri dan Alumni Nurul Cholil</string>
+    <string name="text_username_empty">Username is required</string>
+    <string name="text_password_empty">Password is required</string>
+</resources>

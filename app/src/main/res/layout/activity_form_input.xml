@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.FormInputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="16">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="No. Induk Kependudukan"
+                android:inputType="number"
+                android:maxLength="16" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lengkap"
+                android:inputType="textCapCharacters" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_tempat_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:smsp_enableSearchHeader="true"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Tempat Lahir"
+            app:smsp_hint="Tempat Lahir"
+            app:smsp_hintColor="@color/colorScondaryText"
+            app:smsp_isSearchable="true"
+            app:smsp_itemColor="#512DA8"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_tgl_lahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal Lahir"
+                android:inputType="date"
+                android:maxLength="12"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telephone"
+                android:inputType="number"
+                android:maxLength="12" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_tempat_provinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:smsp_enableSearchHeader="true"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Provinsi"
+            app:smsp_hint="Provinsi"
+            app:smsp_hintColor="@color/colorScondaryText"
+            app:smsp_isSearchable="true"
+            app:smsp_itemColor="#512DA8"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_tempat_kabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:smsp_enableSearchHeader="true"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Kabupaten"
+            app:smsp_hint="Kabupaten"
+            app:smsp_hintColor="@color/colorScondaryText"
+            app:smsp_isSearchable="true"
+            app:smsp_itemColor="#512DA8"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_tempat_kecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:smsp_enableSearchHeader="true"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Kecamatan"
+            app:smsp_hint="Kecamatan"
+
+            app:smsp_hintColor="@color/colorScondaryText"
+            app:smsp_isSearchable="true"
+            app:smsp_itemColor="#512DA8"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinner_tempat_kelurahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:smsp_enableSearchHeader="true"
+            app:smsp_floatingLabelColor="@color/colorPrimaryDark"
+            app:smsp_floatingLabelText="Kelurahan"
+            app:smsp_hint="Kelurahan"
+            app:smsp_hintColor="@color/colorScondaryText"
+            app:smsp_isSearchable="true"
+            app:smsp_itemColor="#512DA8"
+            app:smsp_itemListColor="#7C4DFF"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_multilineError="false"
+            app:smsp_selectedItemListColor="#FF5252" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_jalan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jln/Kmp/Dusun"
+                android:inputType="textCapCharacters" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tahun Masuk"
+                android:inputType="number"
+                android:maxLines="1"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tahun Keluar"
+                android:inputType="number"
+                android:maxLines="1"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Keterangan"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_edittext"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add_a_photo" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@drawable/bg_button_green"
+            android:text="Submit Data"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

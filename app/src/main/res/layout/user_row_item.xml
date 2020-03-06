@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_padding"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingBottom="@dimen/row_padding">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnail"
+        android:layout_height="@dimen/thumbnail"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/row_padding"
+        android:src="@drawable/ic_user_placeholder"
+        app:civ_border_color="#78C4"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="sans-serif-medium"
+        android:text="Khoirur Rosy"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/contact_name" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/thumbnail"
+        android:text="Jarin pademawu pamekasan jawa timur"
+        android:textAllCaps="true"
+        android:textColor="@color/colorScondaryText"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_more" />
+
+</RelativeLayout>
